@@ -1,4 +1,4 @@
-module github.com/MaZderMind/live-hls-transcode
+module github.com/mad5/live-hls-transcode
 
 go 1.13
 

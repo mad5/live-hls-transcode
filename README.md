@@ -25,8 +25,8 @@ After a configurable lifetime after the last access (default: 24 hours), the tra
 ```
 # Install ffmpeg & npm
 
-go get -d github.com/MaZderMind/live-hls-transcode
-cd $GOPATH/src/github.com/MaZderMind/live-hls-transcode/
+go get -d github.com/mad5/live-hls-transcode
+cd $GOPATH/src/github.com/mad5/live-hls-transcode/
 
 make dependencies
 make
