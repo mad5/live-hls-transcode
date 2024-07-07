@@ -1,0 +1,21 @@
+FROM node:bookworm
+WORKDIR /usr/app
+#COPY package.json .
+#RUN npm install --quiet
+
+RUN apt-get update && apt-get install -y ffmpeg npm
+
+RUN apt-get update &&  apt-get install -y golang
+
+
+RUN go install github.com/MaZderMind/live-hls-transcode@master
+#RUN cd $GOPATH/src/github.com/MaZderMind/live-hls-transcode/
+
+#RUN cd /usr/app
+#RUN make dependencies
+#RUN make
+
+#COPY . .
+#COPY test.js /usr/app/test.js
+
+

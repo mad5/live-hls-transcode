@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#go install github.com/MaZderMind/live-hls-transcode@master
+#cd $GOPATH/src/github.com/MaZderMind/live-hls-transcode/
+
+make dependencies
+make
+
+live-hls-transcode --root-dir /videos/
+#node test.js
